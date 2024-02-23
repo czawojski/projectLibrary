@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="myScripts.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Project: Library</title>
+</head>
+<body>
+    <div class="card-container">
+        <div class="projects">
+            <h3 id="yourProjects">Your Library</h3>
+            <div class="projects-card card1">
+                <p class="card-title">Book Title: <span id="book0"></span></p>
+                <p class="author">Author: <span id="author0"></span></p>
+                <p class="pages">Number of pages: <span id="pages0"></span></p>
+                <p class="read">Read? <span id="read0"></span></p>
+                <span class="projects-icons">
+                    <div class="form-popup" id="myForm0">
+                      <!-- removed action="/action_page.php" from form below: -->
+                    <form class="form-container">
+                      <h2>Add book info:</h2>
+                  
+                      <label for="title"><b>Title</b></label>
+                      <input type="text" placeholder="Enter book's title" name="title" id="inputTitle0">
+
+                      <label for="author"><b>Author</b></label>
+                      <input type="text" placeholder="Enter author's name" name="author" id="inputAuthor0">
+                      
+                      <label for="pages"><b>Number of pages</b></label>
+                      <input type="text" placeholder="Enter number of pages" name="pages" id="inputPages0">
+                  <!-- button below was type=submit -->
+                      <button type="button" class="btn" onclick="createBook0()" >Submit</button>
+                      <button type="button" class="btn cancel" onclick="closeForm0()">Close</button>
+                    </form>
+                  </div><input class="open-button" onclick="openForm0()" type="image" src="book-edit-outline.svg" class="bookEdit" alt="bookEdit" title="Add book info" width="30" height="30"/><span class="icon-space"><input type="image" src="book-check-outline.svg" class="bookRead0" alt="bookRead0" title="Mark as read" width="30" height="30"/></span><span class="icon-space"><input type="image" src="book-remove-outline.svg" class="bookRemove0" alt="bookRemove" title="Remove from library" width="30" height="30"/></span></span>
+            </div>
+            <div class="projects-card card2">
+                <p class="card-title">Book Title: <span id="book1"></span></p>
+                <p class="author">Author: <span id="author1"></span></p>
+                <p class="pages">Number of pages: <span id="pages1"></span></p>
+                <p class="read">Read? <span id="read1"></span></p>
+                <span class="projects-icons">                    <div class="form-popup" id="myForm1">
+                  <form class="form-container">
+                    <h2>Add book info:</h2>
+                
+                    <label for="title"><b>Title</b></label>
+                    <input type="text" placeholder="Enter book's title" name="title" id="inputTitle1">
+
+                    <label for="author"><b>Author</b></label>
+                    <input type="text" placeholder="Enter author's name" name="author" id="inputAuthor1">
+                    
+                    <label for="pages"><b>Number of pages</b></label>
+                    <input type="text" placeholder="Enter number of pages" name="pages" id="inputPages1">
+                    <button type="button" class="btn" onclick="createBook1()" >Submit</button>
+                      <button type="button" class="btn cancel" onclick="closeForm1()">Close</button>
+                    </form>
+                  </div><input class="open-button" onclick="openForm1()" type="image" src="book-edit-outline.svg" class="bookEdit" alt="bookEdit" title="Add book info" width="30" height="30"/><span class="icon-space"><input type="image" src="book-check-outline.svg" class="bookRead1" alt="bookRead1" title="Mark as read" width="30" height="30"/></span><span class="icon-space"><input type="image" src="book-remove-outline.svg" class="bookRemove1" alt="bookRemove" title="Remove from library" width="30" height="30"/></span></span>         
+            </div>
+            <div class="projects-card card3">
+                <p class="card-title">Book Title: <span id="book2"></span></p>
+                <p class="author">Author: <span id="author2"></span></p>
+                <p class="pages">Number of pages: <span id="pages2"></span></p>
+                <p class="read">Read? <span id="read2"></span></p>
+                <span class="projects-icons"><div class="form-popup" id="myForm2">
+                  <form class="form-container">
+                    <h2>Add book info:</h2>
+                
+                    <label for="title"><b>Title</b></label>
+                    <input type="text" placeholder="Enter book's title" name="title" id="inputTitle2">
+
+                    <label for="author"><b>Author</b></label>
+                    <input type="text" placeholder="Enter author's name" name="author" id="inputAuthor2">
+                    
+                    <label for="pages"><b>Number of pages</b></label>
+                    <input type="text" placeholder="Enter number of pages" name="pages" id="inputPages2">
+                    <button type="button" class="btn" onclick="createBook2()" >Submit</button>
+                      <button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
+                    </form>
+                  </div><input class="open-button" onclick="openForm2()" type="image" src="book-edit-outline.svg" class="bookEdit" alt="bookEdit" title="Add book info" width="30" height="30"/><span class="icon-space"><input type="image" src="book-check-outline.svg" class="bookRead2" alt="bookRead2" title="Mark as read" width="30" height="30"/></span><span class="icon-space"><input type="image" src="book-remove-outline.svg" class="bookRemove2" alt="bookRemove" title="Remove from library" width="30" height="30"/></span></span>           
+            </div>
+            <div class="projects-card card4">
+                <p class="card-title">Book Title: <span id="book3"></span></p>
+                <p class="author">Author: <span id="author3"></span></p>
+                <p class="pages">Number of pages: <span id="pages3"></span></p>
+                <p class="read">Read? <span id="read3"></span></p>
+                <span class="projects-icons"><div class="form-popup" id="myForm3">
+                  <form class="form-container">
+                    <h2>Add book info:</h2>
+                
+                    <label for="title"><b>Title</b></label>
+                    <input type="text" placeholder="Enter book's title" name="title" id="inputTitle3">
+
+                    <label for="author"><b>Author</b></label>
+                    <input type="text" placeholder="Enter author's name" name="author" id="inputAuthor3">
+                    
+                    <label for="pages"><b>Number of pages</b></label>
+                    <input type="text" placeholder="Enter number of pages" name="pages" id="inputPages3">
+                    <button type="button" class="btn" onclick="createBook3()" >Submit</button>
+                      <button type="button" class="btn cancel" onclick="closeForm3()">Close</button>
+                    </form>
+                  </div><input class="open-button" onclick="openForm3()" type="image" src="book-edit-outline.svg" class="bookEdit" alt="bookEdit" title="Add book info" width="30" height="30"/><span class="icon-space"><input type="image" src="book-check-outline.svg" class="bookRead3" alt="bookRead3" title="Mark as read" width="30" height="30"/></span><span class="icon-space"><input type="image" src="book-remove-outline.svg" class="bookRemove3" alt="bookRemove" title="Remove from library" width="30" height="30"/></span></span>           
+            </div>
+            <div class="projects-card card5">
+                <p class="card-title">Book Title: <span id="book4"></span></p>
+                <p class="author">Author: <span id="author4"></span></p>
+                <p class="pages">Number of pages: <span id="pages4"></span></p>
+                <p class="read">Read? <span id="read4"></span></p>
+                <span class="projects-icons"><div class="form-popup" id="myForm4">
+                  <form class="form-container">
+                    <h2>Add book info:</h2>
+                
+                    <label for="title"><b>Title</b></label>
+                    <input type="text" placeholder="Enter book's title" name="title" id="inputTitle4">
+
+                    <label for="author"><b>Author</b></label>
+                    <input type="text" placeholder="Enter author's name" name="author" id="inputAuthor4">
+                    
+                    <label for="pages"><b>Number of pages</b></label>
+                    <input type="text" placeholder="Enter number of pages" name="pages" id="inputPages4">
+                    <button type="button" class="btn" onclick="createBook4()" >Submit</button>
+                      <button type="button" class="btn cancel" onclick="closeForm4()">Close</button>
+                    </form>
+                  </div><input class="open-button" onclick="openForm4()" type="image" src="book-edit-outline.svg" class="bookEdit" alt="bookEdit" title="Add book info" width="30" height="30"/><span class="icon-space"><input type="image" src="book-check-outline.svg" class="bookRead4" alt="bookRead4" title="Mark as read" width="30" height="30"/></span><span class="icon-space"><input type="image" src="book-remove-outline.svg" class="bookRemove4" alt="bookRemove" title="Remove from library" width="30" height="30"/></span></span>            
+            </div>
+            <div class="projects-card card6">
+                <p class="card-title">Book Title: <span id="book5"></span></p>
+                <p class="author">Author: <span id="author5"></span></p>
+                <p class="pages">Number of pages: <span id="pages5"></span></p>
+                <p class="read">Read? <span id="read5"></span></p>
+                <span class="projects-icons"><div class="form-popup" id="myForm5">
+                  <form class="form-container">
+                    <h2>Add book info:</h2>
+                
+                    <label for="title"><b>Title</b></label>
+                    <input type="text" placeholder="Enter book's title" name="title" id="inputTitle5">
+
+                    <label for="author"><b>Author</b></label>
+                    <input type="text" placeholder="Enter author's name" name="author" id="inputAuthor5">
+                    
+                    <label for="pages"><b>Number of pages</b></label>
+                    <input type="text" placeholder="Enter number of pages" name="pages" id="inputPages5">
+                    <button type="button" class="btn" onclick="createBook5()" >Submit</button>
+                      <button type="button" class="btn cancel" onclick="closeForm5()">Close</button>
+                    </form>
+                  </div><input class="open-button" onclick="openForm5()" type="image" src="book-edit-outline.svg" class="bookEdit" alt="bookEdit" title="Add book info" width="30" height="30"/><span class="icon-space"><input type="image" src="book-check-outline.svg" class="bookRead5" alt="bookRead5" title="Mark as read" width="30" height="30"/></span><span class="icon-space"><input type="image" src="book-remove-outline.svg" class="bookRemove5" alt="bookRemove" title="Remove from library" width="30" height="30"/></span></span>            
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
