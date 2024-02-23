@@ -166,17 +166,34 @@ function closeForm5() {
 }
 
 
+// Old prototype constructor function: 
+// function Book1(title, author, pages) {
+//   this.title = title;
+//   this.author = author;
+//   this.pages = pages;
+// }
+
+// Class declaration:
+// class Rectangle {
+//   constructor(height, width) {
+//     this.height = height;
+//     this.width = width;
+//   }
+// }
+
 // adapting SO createPerson function
 function createBook0() {
   const title0 = document.getElementById('inputTitle0').value;
   const author0 = document.getElementById('inputAuthor0').value;
   const pages0 = document.getElementById('inputPages0').value;
 
-  function Book0(title, author, pages) {
+  class Book0 {
+    constructor(title, author, pages) {
     this.title = title;
     this.author = author;
     this.pages = pages;
   }
+}
 
   const newBook0 = new Book0(title0, author0, pages0);
 
@@ -190,11 +207,13 @@ function createBook1() {
   const author1 = document.getElementById('inputAuthor1').value;
   const pages1 = document.getElementById('inputPages1').value;
 
-  function Book1(title, author, pages) {
+  class Book1 {
+    constructor(title, author, pages) {
     this.title = title;
     this.author = author;
     this.pages = pages;
   }
+}
 
   const newBook1 = new Book1(title1, author1, pages1);
 
@@ -208,11 +227,13 @@ function createBook2() {
   const author2 = document.getElementById('inputAuthor2').value;
   const pages2 = document.getElementById('inputPages2').value;
 
-  function Book2(title, author, pages) {
+  class Book2 {
+    constructor(title, author, pages) {
     this.title = title;
     this.author = author;
     this.pages = pages;
   }
+}
 
   const newBook2 = new Book2(title2, author2, pages2);
 
@@ -226,11 +247,13 @@ function createBook3() {
   const author3 = document.getElementById('inputAuthor3').value;
   const pages3 = document.getElementById('inputPages3').value;
 
-  function Book3(title, author, pages) {
+  class Book3 {
+    constructor(title, author, pages) {
     this.title = title;
     this.author = author;
     this.pages = pages;
   }
+}
 
   const newBook3 = new Book3(title3, author3, pages3);
 
@@ -244,11 +267,13 @@ function createBook4() {
   const author4 = document.getElementById('inputAuthor4').value;
   const pages4 = document.getElementById('inputPages4').value;
 
-  function Book4(title, author, pages) {
+  class Book4 {
+    constructor(title, author, pages) {
     this.title = title;
     this.author = author;
     this.pages = pages;
   }
+}
 
   const newBook4 = new Book4(title4, author4, pages4);
 
@@ -262,11 +287,13 @@ function createBook5() {
   const author5 = document.getElementById('inputAuthor5').value;
   const pages5 = document.getElementById('inputPages5').value;
 
-  function Book5(title, author, pages) {
+  class Book5 {
+    constructor(title, author, pages) {
     this.title = title;
     this.author = author;
     this.pages = pages;
   }
+}
 
   const newBook5 = new Book5(title5, author5, pages5);
 
